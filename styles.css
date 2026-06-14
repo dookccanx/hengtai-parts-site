@@ -1,15 +1,13 @@
 :root {
   color-scheme: light;
   --ink: #17211f;
-  --muted: #66716f;
-  --line: #dce5df;
-  --paper: #fbfcf8;
-  --panel: #ffffff;
-  --green: #0e6b55;
-  --green-dark: #084837;
-  --coral: #d95d47;
+  --muted: #65716e;
+  --line: #d9e2dd;
+  --paper: #f6f8f5;
+  --green: #0d6750;
+  --green-dark: #084739;
+  --coral: #cc5a43;
   --sky: #d7ecf4;
-  --gold: #efb84f;
   --shadow: 0 18px 50px rgba(23, 33, 31, 0.12);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
@@ -33,7 +31,8 @@ a {
   text-decoration: none;
 }
 
-img {
+img,
+video {
   display: block;
   max-width: 100%;
 }
@@ -54,7 +53,7 @@ textarea {
   gap: 24px;
   min-height: 72px;
   padding: 14px clamp(18px, 4vw, 56px);
-  background: rgba(251, 252, 248, 0.92);
+  background: rgba(246, 248, 245, 0.92);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
@@ -97,13 +96,11 @@ textarea {
 }
 
 .hero {
-  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   gap: clamp(28px, 5vw, 70px);
   min-height: calc(100svh - 72px);
   padding: clamp(34px, 6vw, 80px) clamp(18px, 4vw, 56px) clamp(28px, 4vw, 54px);
-  overflow: hidden;
 }
 
 .hero-content {
@@ -111,12 +108,20 @@ textarea {
   max-width: 720px;
 }
 
+.hero-copy,
+.section-head p:not(.eyebrow),
+.inquiry p,
+.proof-copy p,
+.service-grid p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--coral);
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -132,14 +137,11 @@ h1 {
   max-width: 760px;
   font-size: clamp(44px, 6vw, 86px);
   line-height: 0.95;
-  letter-spacing: 0;
 }
 
 .hero-copy {
   max-width: 590px;
-  color: var(--muted);
   font-size: clamp(17px, 2vw, 21px);
-  line-height: 1.55;
 }
 
 .hero-actions {
@@ -147,6 +149,27 @@ h1 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+
+.contact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-strip a,
+.contact-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  color: var(--green-dark);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .button {
@@ -188,7 +211,9 @@ h1 {
 .hero-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -200,11 +225,11 @@ h1 {
 }
 
 .hero-media img:nth-child(2) {
-  background: var(--sky);
+  background: #fff;
 }
 
 .hero-media img:nth-child(3) {
-  background: #fff7e2;
+  background: #fff;
 }
 
 .trust-strip {
@@ -244,18 +269,11 @@ h1 {
 }
 
 .section-head h2,
-.inquiry h2 {
+.inquiry h2,
+.proof-copy h2 {
   margin-bottom: 12px;
   font-size: clamp(30px, 4vw, 54px);
   line-height: 1.04;
-  letter-spacing: 0;
-}
-
-.section-head p:not(.eyebrow),
-.inquiry p {
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.55;
 }
 
 .catalog-tools {
@@ -275,13 +293,20 @@ h1 {
   font-weight: 800;
 }
 
-.search-box input {
+.search-box input,
+form input,
+form textarea {
   width: 100%;
-  height: 44px;
-  padding: 0 13px;
+  padding: 12px 13px;
+  color: var(--ink);
+  background: #fff;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  resize: vertical;
+}
+
+.search-box input {
+  height: 44px;
 }
 
 .category-tabs {
@@ -310,15 +335,84 @@ h1 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  padding: 0;
+}
+
+.product-window {
+  margin: 0 clamp(18px, 4vw, 56px) 82px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.product-window-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.product-window-top strong {
+  font-size: 15px;
+}
+
+.product-window-top span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.product-scroll {
+  max-height: min(760px, 72vh);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 18px;
+  scrollbar-color: var(--green) #eef4f1;
+}
+
+.photo-gallery {
   padding: 0 clamp(18px, 4vw, 56px) 82px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  padding: 8px;
+  background: #fff;
+}
+
+.gallery-grid figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .product-card {
   display: grid;
   grid-template-rows: auto 1fr;
-  min-height: 100%;
   overflow: hidden;
   background: #fff;
   border: 1px solid var(--line);
@@ -328,8 +422,10 @@ h1 {
 .product-card img {
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
-  background: var(--sky);
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+  background: #fff;
 }
 
 .product-card-body {
@@ -342,12 +438,6 @@ h1 {
   margin: 0;
   font-size: 20px;
   line-height: 1.16;
-}
-
-.product-card p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.5;
 }
 
 .pill-row {
@@ -425,14 +515,28 @@ h1 {
   border-radius: 8px;
 }
 
-.service-grid h3 {
-  margin-bottom: 10px;
+.factory-proof {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) 1.3fr;
+  gap: 28px;
+  padding: 78px clamp(18px, 4vw, 56px);
 }
 
-.service-grid p {
-  margin-bottom: 0;
-  color: var(--muted);
-  line-height: 1.52;
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.proof-grid img,
+.proof-grid video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
 }
 
 .inquiry {
@@ -450,10 +554,15 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.inquiry code {
-  padding: 2px 5px;
-  background: #edf2ef;
-  border-radius: 5px;
+.contact-card {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.legal-note {
+  max-width: 520px;
+  font-size: 13px;
 }
 
 form {
@@ -467,17 +576,6 @@ form label {
   color: var(--muted);
   font-size: 13px;
   font-weight: 800;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px 13px;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  resize: vertical;
 }
 
 .product-dialog {
@@ -516,7 +614,10 @@ form textarea {
   width: 100%;
   height: 100%;
   min-height: 430px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
+  background: #fff;
 }
 
 .dialog-body {
@@ -550,6 +651,11 @@ form textarea {
   margin: 0;
 }
 
+.empty-state {
+  padding: 22px;
+  color: var(--muted);
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -564,10 +670,17 @@ form textarea {
   color: #a9bbb5;
 }
 
+.site-footer small {
+  width: 100%;
+  color: #8ea39b;
+}
+
 @media (max-width: 1120px) {
-  .hero {
+  .hero,
+  .services,
+  .factory-proof,
+  .inquiry-panel {
     grid-template-columns: 1fr;
-    min-height: auto;
   }
 
   .hero-media {
@@ -575,13 +688,14 @@ form textarea {
   }
 
   .product-grid,
-  .service-grid {
+  .service-grid,
+  .proof-grid,
+  .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .services,
-  .inquiry-panel {
-    grid-template-columns: 1fr;
+  .product-scroll {
+    max-height: 680px;
   }
 }
 
@@ -613,6 +727,8 @@ form textarea {
   .trust-strip,
   .product-grid,
   .service-grid,
+  .proof-grid,
+  .gallery-grid,
   .dialog-layout {
     grid-template-columns: 1fr;
   }
@@ -629,6 +745,16 @@ form textarea {
 
   .category-tabs {
     justify-content: flex-start;
+  }
+
+  .product-window-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .product-scroll {
+    max-height: 620px;
+    padding: 14px;
   }
 
   .dialog-layout img {

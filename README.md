@@ -1,40 +1,29 @@
-# Trade Social Independent Site
+# Hengtai Forging Foreign Trade Site
 
-This is a static export product website. Open it through a local server so the product JSON can load correctly.
+Static website for excavator undercarriage parts:
 
-## Product data
+- Track Roller
+- Carrier Roller
+- Front Idler
+- Sprocket Segment / Rim
+- Track Chain Assembly
 
-Edit product information in:
+## Contact
 
-```text
-data/products.json
-```
+- WhatsApp: +86 153 5937 2013
+- Email: ycqyw@126.com
+- Email: xmhtwqx@gmail.com
 
-Each product supports:
+## Files
 
-- `name`: English product name
-- `category`: product category for filtering
-- `tagline`: one-line sales description
-- `image`: image path under `assets/`
-- `moq`, `leadTime`, `priceRange`: trade details
-- `certifications`, `markets`: searchable tags
-- `specs`: key-value product specifications
-- `applications`: buyer use cases
-- `socialCopy`: social media selling copy
-- `detail`: detail page paragraph
+- `index.html`
+- `styles.css`
+- `script.js`
+- `data/products.json`
+- `assets/`
 
-## Inquiry email
+## Notes
 
-Change the email address in:
-
-```text
-script.js
-```
-
-Find:
-
-```js
-const inquiryEmail = "sales@example.com";
-```
-
-Replace it with your company email.
+- Public site copy is English-facing.
+- Product and factory photos come from the user's own material folders.
+- Third-party machine names, if present, are only for fitment reference.

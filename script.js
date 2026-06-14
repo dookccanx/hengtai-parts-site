@@ -4,6 +4,9 @@ const catalogState = {
   selected: new Set()
 };
 
+const inquiryEmail = "ycqyw@126.com";
+const inquiryCcEmail = "xmhtwqx@gmail.com";
+
 const grid = document.querySelector("#productGrid");
 const tabs = document.querySelector("#categoryTabs");
 const searchInput = document.querySelector("#searchInput");
@@ -12,8 +15,6 @@ const dialog = document.querySelector("#productDialog");
 const dialogContent = document.querySelector("#dialogContent");
 const closeDialog = document.querySelector("#closeDialog");
 const inquiryForm = document.querySelector("#inquiryForm");
-
-const inquiryEmail = "sales@example.com";
 
 function normalize(value) {
   return String(value || "").toLowerCase();
@@ -73,7 +74,7 @@ function renderProducts() {
         <ul class="meta-list">
           <li><strong>Lead time:</strong> ${product.leadTime}</li>
           <li><strong>Price:</strong> ${product.priceRange}</li>
-          <li><strong>Certificates:</strong> ${product.certifications.join(", ")}</li>
+          <li><strong>Support:</strong> ${product.certifications.join(", ")}</li>
         </ul>
         <div class="product-actions">
           <button class="detail-button" type="button" data-detail="${product.id}">Details</button>
@@ -189,7 +190,7 @@ inquiryForm.addEventListener("submit", (event) => {
     formData.get("message")
   ].join("\n"));
 
-  window.location.href = `mailto:${inquiryEmail}?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:${inquiryEmail}?cc=${encodeURIComponent(inquiryCcEmail)}&subject=${subject}&body=${body}`;
 });
 
 loadProducts().catch(() => {

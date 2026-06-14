@@ -1,106 +1,132 @@
 [
   {
-    "id": "p-001",
-    "name": "Portable Solar Power Station S1200",
-    "category": "Energy Storage",
-    "tagline": "Compact backup power for outdoor, RV, and emergency use.",
-    "image": "assets/product-solar-station.png",
-    "moq": "50 pcs",
+    "id": "track-roller",
+    "name": "Track Roller",
+    "category": "Rollers",
+    "tagline": "Heavy-duty bottom roller for excavator undercarriage replacement and distributor stock.",
+    "image": "assets/undercarriage-track-roller-black.jpg",
+    "moq": "10 pcs",
     "leadTime": "20-30 days",
-    "priceRange": "FOB US$168-236",
-    "certifications": ["CE", "RoHS", "UN38.3", "MSDS"],
-    "markets": ["North America", "EU", "Australia"],
+    "priceRange": "Contact for price",
+    "certifications": ["Heat-treated", "Model matching", "Sample support"],
+    "markets": ["Middle East", "Africa", "South America"],
     "specs": {
-      "Capacity": "1024Wh / 1200W",
-      "Battery": "LiFePO4, 3000+ cycles",
-      "Output": "AC / DC / USB-C / Car port",
-      "Charging": "AC adapter / Solar panel / Car charger",
-      "Warranty": "24 months"
+      "Product": "Track roller / bottom roller",
+      "Material": "Alloy steel",
+      "Process": "Forging, heat treatment, assembly",
+      "Fitment": "Excavator undercarriage systems",
+      "Model support": "Popular excavator model references and sample matching"
     },
     "applications": [
-      "Camping and outdoor retail channels",
-      "Emergency backup kits",
-      "RV and mobile workstation power"
+      "Excavator repair and replacement",
+      "Dealer and distributor stock",
+      "Aftermarket undercarriage programs"
     ],
-    "socialCopy": "Reliable off-grid power in a compact body. Built for distributors serving outdoor, RV, and emergency-preparedness customers.",
-    "detail": "Designed for export partners who need stable quality, complete certification support, and flexible branding for online sales channels."
+    "socialCopy": "Track rollers for excavator undercarriage buyers who need stable supply, model matching, and export packing.",
+    "detail": "Recommended for buyers sourcing reliable bottom rollers for repair channels, distributors, and fleet maintenance projects."
   },
   {
-    "id": "p-002",
-    "name": "Smart WiFi Aroma Diffuser A300",
-    "category": "Smart Home",
-    "tagline": "App-controlled fragrance diffuser for home, hotel, and office spaces.",
-    "image": "assets/product-aroma-diffuser.png",
-    "moq": "300 pcs",
-    "leadTime": "15-25 days",
-    "priceRange": "FOB US$12.80-18.60",
-    "certifications": ["CE", "FCC", "RoHS"],
-    "markets": ["EU", "Middle East", "Southeast Asia"],
+    "id": "carrier-roller",
+    "name": "Carrier Roller",
+    "category": "Rollers",
+    "tagline": "Top roller support for crawler excavator track systems.",
+    "image": "assets/undercarriage-carrier-roller-black.jpg",
+    "moq": "10 pcs",
+    "leadTime": "20-30 days",
+    "priceRange": "Contact for price",
+    "certifications": ["Heat-treated", "Custom packing", "Export packing"],
+    "markets": ["Southeast Asia", "Middle East", "Africa"],
     "specs": {
-      "Capacity": "300ml",
-      "Control": "WiFi app / touch button / timer",
-      "Material": "ABS + PP",
-      "Runtime": "6-10 hours",
-      "Packaging": "Color box or customized gift box"
+      "Product": "Carrier roller / top roller",
+      "Material": "Alloy steel",
+      "Finish": "Black or yellow coating available",
+      "Fitment": "Crawler excavator upper track support",
+      "Supply": "Sample order and bulk order support"
     },
     "applications": [
-      "Lifestyle e-commerce stores",
-      "Hotel amenity programs",
-      "Gift and wellness product bundles"
+      "Repair shop replacement stock",
+      "Spare parts distributors",
+      "Mixed model container orders"
     ],
-    "socialCopy": "A clean, quiet smart diffuser ready for lifestyle brands and home fragrance retailers. OEM color and packaging are available.",
-    "detail": "Supports brand customization, multilingual manuals, and retail packaging for cross-border e-commerce launches."
+    "socialCopy": "Carrier rollers with practical model coverage for excavator spare parts buyers.",
+    "detail": "Suitable for buyers who need repeatable quality, mixed model orders, and clear packing before shipment."
   },
   {
-    "id": "p-003",
-    "name": "Stainless Steel Vacuum Tumbler T500",
-    "category": "Drinkware",
-    "tagline": "Durable insulated tumbler for corporate gifts and retail programs.",
-    "image": "assets/product-tumbler.png",
-    "moq": "500 pcs",
-    "leadTime": "18-28 days",
-    "priceRange": "FOB US$3.20-5.80",
-    "certifications": ["LFGB", "FDA", "BPA Free"],
-    "markets": ["USA", "EU", "South America"],
+    "id": "front-idler",
+    "name": "Front Idler",
+    "category": "Idlers",
+    "tagline": "Front idler assembly for track guidance, tensioning, and undercarriage rebuilds.",
+    "image": "assets/undercarriage-front-idler-yellow.jpg",
+    "moq": "5 pcs",
+    "leadTime": "25-35 days",
+    "priceRange": "Contact for price",
+    "certifications": ["Heat-treated", "Sample support", "Inspection support"],
+    "markets": ["Middle East", "Africa", "South America"],
     "specs": {
-      "Capacity": "500ml / 17oz",
-      "Material": "304 stainless steel",
-      "Insulation": "12h hot / 24h cold",
-      "Finish": "Powder coating / laser logo",
-      "Lid": "Leak-resistant slider lid"
+      "Product": "Front idler",
+      "Material": "Alloy steel",
+      "Color": "Yellow or custom color",
+      "Fitment": "Excavator track guidance and tensioning",
+      "Quality check": "Dimension and surface inspection"
     },
     "applications": [
-      "Promotional gifts",
-      "Outdoor and sports retail",
-      "Private-label drinkware collections"
+      "Undercarriage rebuild projects",
+      "Dealer stock replenishment",
+      "Repair workshop replacement"
     ],
-    "socialCopy": "A classic export-ready tumbler with strong insulation and flexible logo options. Ideal for gift companies and retail buyers.",
-    "detail": "Available in multiple finishes with logo, sleeve, and packaging customization for wholesale and brand programs."
+    "socialCopy": "Front idlers for excavator undercarriage rebuilds, export orders, and distributor programs.",
+    "detail": "A key part for buyers sourcing complete undercarriage packages together with rollers, sprockets, and chains."
   },
   {
-    "id": "p-004",
-    "name": "LED Beauty Mirror M8",
-    "category": "Beauty Tools",
-    "tagline": "Rechargeable vanity mirror with adjustable LED lighting.",
-    "image": "assets/product-led-mirror.png",
-    "moq": "200 pcs",
-    "leadTime": "20-35 days",
-    "priceRange": "FOB US$9.50-15.20",
-    "certifications": ["CE", "RoHS", "BSCI"],
-    "markets": ["EU", "UK", "Japan"],
+    "id": "sprocket",
+    "name": "Sprocket Segment / Rim",
+    "category": "Sprockets",
+    "tagline": "Drive sprocket segment and rim options for excavator undercarriage systems.",
+    "image": "assets/undercarriage-sprocket-yellow.jpg",
+    "moq": "10 pcs",
+    "leadTime": "20-30 days",
+    "priceRange": "Contact for price",
+    "certifications": ["Heat-treated", "Model matching", "Export packing"],
+    "markets": ["Africa", "Middle East", "South America"],
     "specs": {
-      "Lighting": "3 color modes, dimmable",
-      "Battery": "1200mAh rechargeable",
-      "Material": "ABS + glass mirror",
-      "Size": "8 inch desktop model",
-      "Customization": "Logo printing and color matching"
+      "Product": "Sprocket segment / sprocket rim",
+      "Material": "Alloy steel",
+      "Surface": "Painted and finished working surface",
+      "Fitment": "Excavator final drive undercarriage",
+      "Packing": "Pallet or export carton by order"
     },
     "applications": [
-      "Beauty retail stores",
-      "Amazon and TikTok Shop sellers",
-      "Gift sets and travel accessories"
+      "Final drive undercarriage replacement",
+      "Bulk spare parts orders",
+      "Distributor catalog expansion"
     ],
-    "socialCopy": "Soft, adjustable lighting for daily makeup routines. A practical SKU for beauty retailers and social commerce sellers.",
-    "detail": "Built for repeat online sales with stable quality, clean packaging options, and support for private-label branding."
+    "socialCopy": "Sprocket segments and rims for excavator spare parts buyers who need model matching and export-ready packing.",
+    "detail": "Quote by machine model, part number, quantity, and destination to confirm the right sprocket segment or rim option."
+  },
+  {
+    "id": "track-chain-assembly",
+    "name": "Track Chain Assembly",
+    "category": "Track Chains",
+    "tagline": "Colored track chain assembly for crawler excavator replacement and stock orders.",
+    "image": "assets/undercarriage-track-chain-yellow.jpg",
+    "moq": "2 sets",
+    "leadTime": "25-40 days",
+    "priceRange": "Contact for price",
+    "certifications": ["Heat-treated", "Model matching", "Bulk order support"],
+    "markets": ["Africa", "Middle East", "South America"],
+    "specs": {
+      "Product": "Track chain assembly",
+      "Material": "Alloy steel",
+      "Color": "Yellow coating shown, other colors by request",
+      "Fitment": "Crawler excavator track system",
+      "Quote basis": "Model, pitch, link count, quantity"
+    },
+    "applications": [
+      "Complete undercarriage replacement",
+      "Distributor container orders",
+      "Repair and maintenance programs"
+    ],
+    "socialCopy": "Colored track chain assemblies for buyers sourcing complete excavator undercarriage packages.",
+    "detail": "Send machine model, chain pitch, link count, and order quantity so the factory can check compatibility and quote correctly."
   }
 ]
