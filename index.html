@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrightLink Global | Export Products & Social Commerce</title>
+    <meta name="description" content="Export-ready product catalog and inquiry site for global buyers, distributors, and social commerce sellers.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="BrightLink Global home">
+        <span class="brand-mark">B</span>
+        <span>
+          <strong>BrightLink Global</strong>
+          <small>Export-ready social commerce</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#inquiry">Inquiry</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/product-solar-station.png" alt="">
+          <img src="assets/product-aroma-diffuser.png" alt="">
+          <img src="assets/product-tumbler.png" alt="">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">B2B catalog for distributors, retail buyers, and social sellers</p>
+          <h1>Export products ready for your next market launch.</h1>
+          <p class="hero-copy">Browse curated products, check core specs, collect selling points, and send an inquiry with the SKUs you want to quote.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">View products</a>
+            <a class="button secondary" href="#inquiry">Send inquiry</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Export advantages">
+        <div>
+          <strong>OEM / ODM</strong>
+          <span>Logo, color, packaging, and listing assets</span>
+        </div>
+        <div>
+          <strong>Export Support</strong>
+          <span>Certificates, samples, inspection, shipping docs</span>
+        </div>
+        <div>
+          <strong>Social Commerce</strong>
+          <span>Short-form copy, platform-ready product highlights</span>
+        </div>
+      </section>
+
+      <section class="section-head" id="products">
+        <p class="eyebrow">Product catalog</p>
+        <h2>Choose SKUs for quotation</h2>
+        <p>Filter by category, open product details, and add products to the inquiry list.</p>
+      </section>
+
+      <section class="catalog-tools" aria-label="Catalog filters">
+        <label class="search-box">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Product name, market, certification...">
+        </label>
+        <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Product categories"></div>
+      </section>
+
+      <section class="product-grid" id="productGrid" aria-live="polite"></section>
+
+      <section class="services" id="services">
+        <div class="section-head compact">
+          <p class="eyebrow">What buyers get</p>
+          <h2>From product data to market-ready materials</h2>
+        </div>
+        <div class="service-grid">
+          <article>
+            <h3>Product data package</h3>
+            <p>English selling points, specifications, application scenarios, certificates, and packaging notes.</p>
+          </article>
+          <article>
+            <h3>Social media content</h3>
+            <p>Platform-friendly product hooks for LinkedIn, Facebook, Instagram, TikTok Shop, and marketplace listings.</p>
+          </article>
+          <article>
+            <h3>Buyer inquiry flow</h3>
+            <p>Selected SKUs are carried into the inquiry form so buyers can request quotes without repeating information.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="inquiry" id="inquiry">
+        <div class="inquiry-panel">
+          <div>
+            <p class="eyebrow">Request quotation</p>
+            <h2>Tell us your target market and order plan.</h2>
+            <p>Use this form as the website inquiry module. Replace the email address in <code>script.js</code> when your domain email is ready.</p>
+          </div>
+          <form id="inquiryForm">
+            <label>
+              Name
+              <input name="name" required placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required placeholder="buyer@example.com">
+            </label>
+            <label>
+              Company / Market
+              <input name="market" placeholder="Company name, target market">
+            </label>
+            <label>
+              Selected products
+              <textarea name="products" id="selectedProducts" rows="3" placeholder="Select products from the catalog or type SKU names"></textarea>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="MOQ, logo, packaging, sample request, shipping destination..."></textarea>
+            </label>
+            <button class="button primary" type="submit">Create email inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="product-dialog" id="productDialog">
+      <button class="dialog-close" type="button" id="closeDialog" aria-label="Close product detail">×</button>
+      <div id="dialogContent"></div>
+    </dialog>
+
+    <footer class="site-footer">
+      <strong>BrightLink Global</strong>
+      <span>Replace this demo brand, products, and email with your real company information.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

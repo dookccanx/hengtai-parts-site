@@ -1,0 +1,106 @@
+[
+  {
+    "id": "p-001",
+    "name": "Portable Solar Power Station S1200",
+    "category": "Energy Storage",
+    "tagline": "Compact backup power for outdoor, RV, and emergency use.",
+    "image": "assets/product-solar-station.png",
+    "moq": "50 pcs",
+    "leadTime": "20-30 days",
+    "priceRange": "FOB US$168-236",
+    "certifications": ["CE", "RoHS", "UN38.3", "MSDS"],
+    "markets": ["North America", "EU", "Australia"],
+    "specs": {
+      "Capacity": "1024Wh / 1200W",
+      "Battery": "LiFePO4, 3000+ cycles",
+      "Output": "AC / DC / USB-C / Car port",
+      "Charging": "AC adapter / Solar panel / Car charger",
+      "Warranty": "24 months"
+    },
+    "applications": [
+      "Camping and outdoor retail channels",
+      "Emergency backup kits",
+      "RV and mobile workstation power"
+    ],
+    "socialCopy": "Reliable off-grid power in a compact body. Built for distributors serving outdoor, RV, and emergency-preparedness customers.",
+    "detail": "Designed for export partners who need stable quality, complete certification support, and flexible branding for online sales channels."
+  },
+  {
+    "id": "p-002",
+    "name": "Smart WiFi Aroma Diffuser A300",
+    "category": "Smart Home",
+    "tagline": "App-controlled fragrance diffuser for home, hotel, and office spaces.",
+    "image": "assets/product-aroma-diffuser.png",
+    "moq": "300 pcs",
+    "leadTime": "15-25 days",
+    "priceRange": "FOB US$12.80-18.60",
+    "certifications": ["CE", "FCC", "RoHS"],
+    "markets": ["EU", "Middle East", "Southeast Asia"],
+    "specs": {
+      "Capacity": "300ml",
+      "Control": "WiFi app / touch button / timer",
+      "Material": "ABS + PP",
+      "Runtime": "6-10 hours",
+      "Packaging": "Color box or customized gift box"
+    },
+    "applications": [
+      "Lifestyle e-commerce stores",
+      "Hotel amenity programs",
+      "Gift and wellness product bundles"
+    ],
+    "socialCopy": "A clean, quiet smart diffuser ready for lifestyle brands and home fragrance retailers. OEM color and packaging are available.",
+    "detail": "Supports brand customization, multilingual manuals, and retail packaging for cross-border e-commerce launches."
+  },
+  {
+    "id": "p-003",
+    "name": "Stainless Steel Vacuum Tumbler T500",
+    "category": "Drinkware",
+    "tagline": "Durable insulated tumbler for corporate gifts and retail programs.",
+    "image": "assets/product-tumbler.png",
+    "moq": "500 pcs",
+    "leadTime": "18-28 days",
+    "priceRange": "FOB US$3.20-5.80",
+    "certifications": ["LFGB", "FDA", "BPA Free"],
+    "markets": ["USA", "EU", "South America"],
+    "specs": {
+      "Capacity": "500ml / 17oz",
+      "Material": "304 stainless steel",
+      "Insulation": "12h hot / 24h cold",
+      "Finish": "Powder coating / laser logo",
+      "Lid": "Leak-resistant slider lid"
+    },
+    "applications": [
+      "Promotional gifts",
+      "Outdoor and sports retail",
+      "Private-label drinkware collections"
+    ],
+    "socialCopy": "A classic export-ready tumbler with strong insulation and flexible logo options. Ideal for gift companies and retail buyers.",
+    "detail": "Available in multiple finishes with logo, sleeve, and packaging customization for wholesale and brand programs."
+  },
+  {
+    "id": "p-004",
+    "name": "LED Beauty Mirror M8",
+    "category": "Beauty Tools",
+    "tagline": "Rechargeable vanity mirror with adjustable LED lighting.",
+    "image": "assets/product-led-mirror.png",
+    "moq": "200 pcs",
+    "leadTime": "20-35 days",
+    "priceRange": "FOB US$9.50-15.20",
+    "certifications": ["CE", "RoHS", "BSCI"],
+    "markets": ["EU", "UK", "Japan"],
+    "specs": {
+      "Lighting": "3 color modes, dimmable",
+      "Battery": "1200mAh rechargeable",
+      "Material": "ABS + glass mirror",
+      "Size": "8 inch desktop model",
+      "Customization": "Logo printing and color matching"
+    },
+    "applications": [
+      "Beauty retail stores",
+      "Amazon and TikTok Shop sellers",
+      "Gift sets and travel accessories"
+    ],
+    "socialCopy": "Soft, adjustable lighting for daily makeup routines. A practical SKU for beauty retailers and social commerce sellers.",
+    "detail": "Built for repeat online sales with stable quality, clean packaging options, and support for private-label branding."
+  }
+]
