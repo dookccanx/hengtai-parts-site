@@ -178,10 +178,6 @@
             <figcaption>Bucket teeth</figcaption>
           </figure>
           <figure>
-            <img src="assets/bucket-tooth-single-white.jpg" alt="Single bucket tooth on white background">
-            <figcaption>Single bucket tooth</figcaption>
-          </figure>
-          <figure>
             <img src="assets/bucket-tooth-angle-white.jpg" alt="Bucket tooth side view on white background">
             <figcaption>Bucket tooth detail</figcaption>
           </figure>
@@ -222,8 +218,6 @@
           <img src="assets/factory-sprocket-stock.jpg" alt="Sprocket stock and workshop production area">
           <img src="assets/inspection-line-2.jpg" alt="Workshop inspection and machining line">
           <img src="assets/warehouse.jpg" alt="Undercarriage parts warehouse stock">
-          <img src="assets/undercarriage-display-614.jpg" alt="Undercarriage display set">
-          <img src="assets/undercarriage-showroom-614.jpg" alt="Showroom display of undercarriage parts">
           <video src="assets/production.mp4" controls muted playsinline></video>
         </div>
       </section>
@@ -271,6 +265,12 @@
     <dialog class="product-dialog" id="productDialog">
       <button class="dialog-close" type="button" id="closeDialog" aria-label="Close product detail">x</button>
       <div id="dialogContent"></div>
+    </dialog>
+
+    <dialog class="image-lightbox" id="imageLightbox">
+      <button class="lightbox-close" type="button" id="closeLightbox" aria-label="Close image preview">x</button>
+      <img id="lightboxImage" alt="">
+      <p id="lightboxCaption"></p>
     </dialog>
 
     <footer class="site-footer">

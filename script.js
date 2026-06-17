@@ -14,6 +14,10 @@ const selectedProducts = document.querySelector("#selectedProducts");
 const dialog = document.querySelector("#productDialog");
 const dialogContent = document.querySelector("#dialogContent");
 const closeDialog = document.querySelector("#closeDialog");
+const lightbox = document.querySelector("#imageLightbox");
+const lightboxImage = document.querySelector("#lightboxImage");
+const lightboxCaption = document.querySelector("#lightboxCaption");
+const closeLightbox = document.querySelector("#closeLightbox");
 const inquiryForm = document.querySelector("#inquiryForm");
 
 function normalize(value) {
@@ -134,6 +138,14 @@ function addProductToInquiry(productId) {
   renderProducts();
 }
 
+function openLightbox(src, alt) {
+  if (!src || !lightbox) return;
+  lightboxImage.src = src;
+  lightboxImage.alt = alt || "";
+  lightboxCaption.textContent = alt || "";
+  lightbox.showModal();
+}
+
 async function loadProducts() {
   const response = await fetch("data/products.json");
   catalogState.products = await response.json();
@@ -150,8 +162,14 @@ tabs.addEventListener("click", (event) => {
 });
 
 grid.addEventListener("click", (event) => {
+  const image = event.target.closest("img");
   const detailButton = event.target.closest("[data-detail]");
   const quoteButton = event.target.closest("[data-quote]");
+
+  if (image) {
+    openLightbox(image.currentSrc || image.src, image.alt);
+    return;
+  }
 
   if (detailButton) {
     openProductDialog(detailButton.dataset.detail);
@@ -164,6 +182,12 @@ grid.addEventListener("click", (event) => {
 });
 
 dialogContent.addEventListener("click", (event) => {
+  const image = event.target.closest("img");
+  if (image) {
+    openLightbox(image.currentSrc || image.src, image.alt);
+    return;
+  }
+
   const quoteButton = event.target.closest("[data-dialog-quote]");
   if (!quoteButton) return;
   addProductToInquiry(quoteButton.dataset.dialogQuote);
@@ -172,7 +196,26 @@ dialogContent.addEventListener("click", (event) => {
 });
 
 closeDialog.addEventListener("click", () => dialog.close());
+closeLightbox.addEventListener("click", () => lightbox.close());
 searchInput.addEventListener("input", renderProducts);
+
+document.querySelectorAll(".gallery-grid img, .proof-grid img").forEach((image) => {
+  image.addEventListener("click", () => {
+    openLightbox(image.currentSrc || image.src, image.alt);
+  });
+});
+
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    lightbox.close();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox.open) {
+    lightbox.close();
+  }
+});
 
 inquiryForm.addEventListener("submit", (event) => {
   event.preventDefault();

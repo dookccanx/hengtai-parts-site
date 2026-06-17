@@ -401,6 +401,14 @@ form textarea {
   object-position: center;
   padding: 8px;
   background: #fff;
+  cursor: zoom-in;
+  transition: transform 160ms ease;
+}
+
+.gallery-grid img:hover,
+.product-card img:hover,
+.proof-grid img:hover {
+  transform: scale(1.025);
 }
 
 .gallery-grid figcaption {
@@ -426,6 +434,8 @@ form textarea {
   object-position: center;
   padding: 10px;
   background: #fff;
+  cursor: zoom-in;
+  transition: transform 160ms ease;
 }
 
 .product-card-body {
@@ -539,6 +549,11 @@ form textarea {
   border-radius: 8px;
 }
 
+.proof-grid img {
+  cursor: zoom-in;
+  transition: transform 160ms ease;
+}
+
 .inquiry {
   padding: 80px clamp(18px, 4vw, 56px);
 }
@@ -588,6 +603,51 @@ form label {
 
 .product-dialog::backdrop {
   background: rgba(23, 33, 31, 0.48);
+}
+
+.image-lightbox {
+  width: min(1040px, calc(100vw - 28px));
+  max-height: calc(100vh - 28px);
+  padding: 18px;
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.image-lightbox::backdrop {
+  background: rgba(23, 33, 31, 0.72);
+}
+
+.image-lightbox img {
+  width: 100%;
+  max-height: calc(100vh - 132px);
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+
+.image-lightbox p {
+  margin: 12px 44px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+  box-shadow: 0 8px 24px rgba(23, 33, 31, 0.16);
 }
 
 .dialog-close {
